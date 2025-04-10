@@ -13,7 +13,7 @@ jobs:
            cat README.md
     - name: Executing Script
       run: |
-          chmod +x script.sh
+          chmod +x .github/workflows/script.sh
           .github/workflows/script.sh
       
     
