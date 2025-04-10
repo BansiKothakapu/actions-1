@@ -12,6 +12,6 @@ jobs:
            ls -ltr
            cat README.md
     - name: Executing Script
-      run: ./script.sh
+      run: .github/workflows/script.sh
       
     
