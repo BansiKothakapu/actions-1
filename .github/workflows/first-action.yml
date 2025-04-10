@@ -8,7 +8,10 @@ jobs:
       uses: actions/checkout@v4
     - name: welcome message
       run: echo "Welcome to GitHub Actions"
-    - name: List Files
-      run: ls -ltr
-    - name: Read files
-      run: cat README.md
+           ls -ltr
+           cat README.md
+           
+    # - name: List Files
+    #   run: ls -ltr
+    # - name: Read files
+    #   run: cat README.md
