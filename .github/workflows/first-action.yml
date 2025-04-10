@@ -11,6 +11,10 @@ jobs:
            echo "Welcome to GitHub Actions"
            ls -ltr
            cat README.md
+
+    - name: Adding Third Party Libraries
+      run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+           
            
     # - name: List Files
     #   run: ls -ltr
