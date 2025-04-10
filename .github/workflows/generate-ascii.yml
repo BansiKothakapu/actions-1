@@ -1,0 +1,26 @@
+name: Generate ASCII Artwork
+on: [push]
+jobs:
+  ascii-job:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: welcome message
+      run: |
+           echo "Welcome to GitHub Actions"
+           ls -ltr
+           cat README.md
+    - name: Installing cowsay package
+      run: sudo apt-get -y install cowsay
+      
+    - name: Adding Third Party Libraries
+      run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+
+    - name: Dragon file exists or not
+      run: ls -ltr | grep dragon.txt
+
+    - name: Read file
+      run: cat dragon.txt
+    - name: Checkout Repo Files
+      run: ls -ltr
